@@ -1,0 +1,291 @@
+@import url(https://fonts.googleapis.com/css2?family=Alata&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap);
+
+/* font-family: 'Josefin Sans', sans-serif; */
+
+/* font-family: 'Alata', sans-serif; main */
+
+:root {
+  --main-font-family: "Alata", sans-serif;
+  --secondary-font-family: "Josefin Sans", sans-serif;
+  --back-color: #000000;
+  --white-color: #ffffff;
+}
+
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  font-family: var(--main-font-family);
+  color: var(--back-color);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* HEADER START */
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.4) 100%),
+    url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 4.8rem;
+}
+.header-container {
+  padding-top: 6.4em;
+  padding-bottom: 14.6rem;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13rem;
+}
+.site-logo {
+  display: block;
+  margin-right: auto;
+}
+
+.site-logo__image {
+}
+.sitenav {
+}
+.sitenav__list {
+  display: flex;
+}
+.sitenav__item:not(:last-child) {
+  margin-right: 3.2rem;
+}
+.sitenav__link {
+  color: var(--white-color);
+}
+.header__content {
+  padding: 4rem;
+  max-width: 650px;
+  width: 100%;
+  border: 2px solid var(--white-color);
+}
+
+.header__content h1 {
+  font-size: 7.2rem;
+  text-align: left;
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 0.97;
+}
+
+.sitenav-toggle-btn {
+  display: none;
+  background: none;
+  border: 0;
+}
+
+/* HEADER END */
+
+/* MAIN */
+main {
+  flex-grow: 1;
+}
+
+.interactive-vr {
+  padding-top: 4.8rem;
+  margin-bottom: 9.2rem;
+}
+.interactive-vr__container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.interactive_vr--image {
+  width: 100%;
+  height: auto;
+}
+.interactive-vr__content {
+  background: #fff;
+  width: 100%;
+  max-width: 541px;
+  padding-top: 9.6rem;
+  padding-left: 9.6rem;
+  margin-left: -15.6rem;
+}
+.interactive-vr__title {
+  font-size: 4.8rem;
+  line-height: 1;
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+}
+.interactive-vr__text {
+}
+
+/* MEIDA */
+
+@media (max-width: 960px) {
+  .interactive-vr__content {
+    margin-left: -20em;
+  }
+
+  .interactive-vr__title {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 772px) {
+  .interactive-vr__container {
+    flex-direction: column;
+    gap: 4.8rem;
+    text-align: center;
+  }
+
+  .interactive-vr-image {
+    display: block;
+    margin-bottom: 4.8rem;
+  }
+
+  .interactive-vr__title {
+    margin-bottom: 1.6rem;
+  }
+
+  .interactive-vr__content {
+    max-width: 279px;
+    padding-top: 0;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 736px) {
+  .header {
+    height: 100vh;
+  }
+
+  .header-container {
+    padding-top: 5rem;
+  }
+
+  .sitenav {
+    display: none;
+  }
+
+  .sitenav-toggle-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 630px) {
+  .header-container {
+    padding-top: 4rem;
+  }
+
+  .header__content h1 {
+    font-size: 4rem;
+  }
+
+  .header__content {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__content h1 {
+    font-size: 2.5rem;
+  }
+
+  .header__content {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 587px;) {
+  .footer;
+}
+
+.interactive-va {
+  height: 70%;
+}
+.container {
+}
+.author {
+  display: flex;
+  padding-top: 2rem;
+}
+h1 {
+  padding-left: 10px;
+  font-size: 5rem;
+}
+button {
+  width: 15%;
+  height: 30px;
+  border: none;
+  margin-top: 2rem;
+  margin-left: 55rem;
+  background-color: #000000;
+  color: white;
+}
+.section__lik {
+  color: white;
+}
+.image {
+  display: flex;
+  top: 50px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer {
+  height: 10%;
+  background-color: #000000;
+}
+.quote {
+  padding-top: 10rem;
+  display: flex;
+  gap: 10px;
+}
+.title__list {
+  margin-left: 15px;
+}
+.title__item {
+  margin-left: 10px;
+}
+a {
+  color: white;
+}
